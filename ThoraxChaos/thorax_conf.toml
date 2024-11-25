@@ -1,0 +1,37 @@
+[chaos_config]
+enabled = true
+schedule_enabled = true
+leashed = false
+accounts = ["production", "staging"]
+start_hour = 9
+end_hour = 18
+time_zone = "UTC"
+max_apps = 100
+trackers = []
+error_counter = "error-counter-system"
+outage_checker = "outage-checker-system"
+
+[thorax_service]
+host = "thoraxservice.example.com"
+port = 8080
+service_endpoint = "/status"
+user = "admin"
+password_encrypted = "gAAAAABlZwx...<encrypted_password>"
+decryptor = "gpg"
+
+[mysql]
+host = "mysql.example.com"
+port = 3306
+user = "mysql_admin"
+password_encrypted = "gAAAAABlZwx...<encrypted_password>"
+decryptor = "gpg"
+
+[spinnaker]
+cert_path = "/path/to/spinnaker.p12"
+password_encrypted = "gAAAAABlZwx...<encrypted_password>"
+decryptor = "gpg"
+
+[dynamic_config]
+provider = "etcd"
+endpoint = "http://localhost:2379"
+path = "/chaos"

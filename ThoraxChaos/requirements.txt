@@ -1,0 +1,50 @@
+flask
+toml
+requests
+# Azure SDK and related packages
+azure-identity==1.10.0          # Azure authentication (via Service Principal)
+azure-mgmt-compute     # Azure Compute resource management (VMs)
+azure-mgmt-network==21.0.0      # Azure Network resource management (NICs, VNETs)
+azure-mgmt-resource==21.0.0     # Azure Resource management (for resource groups)
+azure-storage-blob==12.12.0     # Azure Blob Storage for logging or storing reports
+
+# Chaos Engineering and experiment libraries
+chaoslib               # Chaos Engineering framework to simulate failures
+chaos-engineering       # Hypothetical library for chaos experiment orchestration (if available)
+
+# Data management and reporting
+# pyyaml==6.0                    # YAML file handling for configuration files
+jsonschema==4.8.0               # JSON schema validation (for configuration file structure)
+
+# CLI and terminal commands
+click==8.1.3                   # Command-line interface building library (for creating CLI commands)
+fire==0.4.0                    # Simplifies the creation of command-line interfaces
+
+# Logging and monitoring
+loguru==0.6.0                  # Logging library for better logging management
+colorlog==6.6.0                # Colored logging for better visual feedback
+
+# Testing and CI/CD tools
+pytest==7.4.0                  # Testing framework
+pytest-mock==3.10.0            # Mocking for unit tests
+mock==5.0.0                    # Python's built-in mock library (for unit tests)
+
+# Cloud and Azure SDK dependencies
+msal==1.22.0                   # Microsoft Authentication Library (for OAuth2)
+
+# Report generation
+matplotlib==3.7.0              # For plotting analytics and generating reports
+pandas                  # For data manipulation (e.g., creating tables from logs, failures)
+
+# File handling and utilities
+requests==2.30.0               # For making HTTP requests (e.g., communicating with Azure or other endpoints)
+tqdm==4.66.1                   # Progress bar for long-running tasks
+
+# Optional: For advanced network failure simulation or resource monitoring
+psutil==5.9.4                  # For monitoring system resources during the chaos test (e.g., CPU, memory)
+
+# Optional for advanced logging (if using external services)
+sentry-sdk==2.10.0             # If integrating with Sentry for real-time error tracking and monitoring
+
+# For Azure-specific failures and managing chaos
+azure-mgmt-monitor==1.0.0      # If you need to manage Azure monitoring services during the chaos experiments

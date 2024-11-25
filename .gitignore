@@ -1,0 +1,53 @@
+# Python-related ignores
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.db
+*.sqlite3
+*.log
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Azure-specific files
+*.azure
+azure-credentials.json
+azure-config.json
+
+# IDEs
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Cache directories
+__pycache__/
+*.egg-info/
+
+# Test coverage
+.coverage
+nosetests.xml
+coverage.xml
+*.cover
+
+# Temporary files
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Configuration files for local development
+config.yaml
+config_template.yaml
